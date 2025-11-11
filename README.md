@@ -23,29 +23,11 @@
  1. Клонируем проект:
  2. Создаем виртуальное окружение:
  3. Устанавливаем зависимости:
- 4. Создаем файл .env в корне проекта (пример):
-
-DEBUG=True  
-SECRET_KEY=your-secret-key  
-DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1  
-DATABASE_URL=postgres://user:password@localhost:5432/dbname  
-REDIS_URL=redis://localhost:6379/0  
-
-SMTP_HOST=smtp.example.com  
-SMTP_PORT=587  
-SMTP_USER=user@example.com  
-SMTP_PASSWORD=secret  
-
-TG_BOT_TOKEN=your_telegram_bot_token  
-SMS_API_URL=  
-SMS_API_KEY=  
-
- 5. Применяем миграции:
- 7. Запускаем сервер:
- 8. Запускаем Celery worker:
+ 4. Применяем миграции:
+ 5. Запускаем сервер:
+ 6. Запускаем Celery worker:
 
    celery -A notif_project worker --loglevel=info
-
 
 REST API  
 
